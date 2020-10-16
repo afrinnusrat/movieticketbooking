@@ -15,6 +15,7 @@ class CustomerForm(forms.ModelForm):
         model=models.Customer
         fields=['address','mobile','profile_pic']
 
+
 class ProducerUserForm(forms.ModelForm):
     class Meta:
         model=User
@@ -69,7 +70,7 @@ class SellToTheatreForm(forms.Form):
 class AdminTheatreForm(forms.Form):
     #to_field_name value will be stored when form is submitted.....__str__ method of customer model will be shown there in html
     theatre=forms.ModelChoiceField(queryset=models.Theatre.objects.filter(status=True),empty_label="Theatre Name",to_field_name='id')
-    
+
 
 
 
