@@ -1360,6 +1360,12 @@ def download_tickets_view(request,pk):
 #============================================================================================
 # OTHER views start
 #============================================================================================
+def view_movie_detailss_view(request,pk):
+    movie=models.Movie.objects.get(id=pk)
+    dict={
+    'movie':movie,
+    }
+    return render(request,'multiplex/view_movie_detailss.html',context=dict)
 
 # for aboutus and contact
 def aboutus_view(request):

@@ -74,7 +74,7 @@ urlpatterns = [
     path('admin-add-customer', views.admin_add_customer_view,name='admin-add-customer'),
     path('admin-view-customer-booking', views.admin_view_customer_booking_view,name='admin-view-customer-booking'),
     path('delete-booking/<int:pk>', views.delete_booking_view,name='delete-booking'),
-    
+
 
     path('admin-view-movie', views.admin_view_movie_view,name='admin-view-movie'),
     path('delete-movie/<int:pk>', views.delete_movie_view,name='delete-movie'),
@@ -125,6 +125,7 @@ urlpatterns = [
     path('download-ticket', views.download_ticket_view,name='download-ticket'),
     path('download-tickets/<int:pk>', views.download_tickets_view,name='download-tickets'),
     path('view-movie-details/<int:pk>', views.view_movie_details_view,name='view-movie-details'),
+    path('view-movie-detailss/<int:pk>', views.view_movie_detailss_view,name='view-movie-detailss'),
 
     path('book-now/<int:pk>', views.book_now_view,name='book-now'),
     path('choose-seat', views.choose_seat_view,name='choose-seat'),
